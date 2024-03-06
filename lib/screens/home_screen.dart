@@ -1,5 +1,4 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:smartpay/core/extension/build_context_extensions.dart';
@@ -76,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen>  with SingleTickerProviderState
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Your daily qoutes',
+                      'Your daily quotes',
                       style: context.textTheme.bodySmall?.copyWith(
                           fontWeight: FontWeight.w600,
                           fontStyle: FontStyle.normal,
@@ -87,9 +86,9 @@ class _HomeScreenState extends State<HomeScreen>  with SingleTickerProviderState
                   ],
                 ),
 
-                Icon(Icons.comment_bank_outlined),
+                const Icon(Icons.comment_bank_outlined),
                 Container(
-                  padding: EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(color: AppColors.offWhite),
@@ -98,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen>  with SingleTickerProviderState
                       color: Colors.red.withOpacity(0.5), // Shadow color
                       spreadRadius: 5, // Spread radius
                       blurRadius: 7, // Blur radius
-                      offset: Offset(0, 3), // Offset
+                      offset: const Offset(0, 3), // Offset
                     ),
                   ],
                   ),

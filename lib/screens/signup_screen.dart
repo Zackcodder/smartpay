@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:provider/provider.dart';
 import 'package:smartpay/core/extension/build_context_extensions.dart';
 import 'package:smartpay/core/extension/widget_extensions.dart';

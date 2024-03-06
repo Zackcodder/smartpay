@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:provider/provider.dart';
 import 'package:smartpay/core/extension/build_context_extensions.dart';
 import 'package:smartpay/core/extension/widget_extensions.dart';
@@ -193,15 +192,6 @@ class _LoginScreenState extends State<LoginScreen> {
                                 final password = passwordController.text;
                                 authProvider.signIn(
                                     context, email, password, deviceId);
-                              } else {
-                                throw Fluttertoast.showToast(
-                                    fontSize: 18,
-                                    toastLength: Toast.LENGTH_LONG,
-                                    backgroundColor:
-                                        Colors.red.withOpacity(0.7),
-                                    msg: 'Fill empty field',
-                                    gravity: ToastGravity.BOTTOM,
-                                    textColor: Colors.white);
                               }
                             }
                           },
